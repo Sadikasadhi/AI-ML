@@ -32,7 +32,7 @@ Following is the Breadth First Search<br>
 1 2 10 3 8 4 9 5 6 7 <br>
 
 2. Write a Program to Implement Depth First Search using Python.<br>
-# Using a Python dictionary to act as an adjacency list<br>
+#Using a Python dictionary to act as an adjacency list<br>
 graph = {<br>
     '5' : ['3','7'],<br>
     '3' : ['2', '4'],<br>
@@ -43,7 +43,7 @@ graph = {<br>
     '4' : ['8'],<br>
     '8' : []<br>
 }<br>
-visited = set() # Set to keep track of visited nodes of graph.<br>
+visited = set() #Set to keep track of visited nodes of graph.<br>
 def dfs(visited, graph, node): #function for dfs<br>
     if node not in visited:<br>
         print (node)<br>
@@ -51,7 +51,7 @@ def dfs(visited, graph, node): #function for dfs<br>
         for neighbour in graph[node]:<br>
             dfs(visited, graph, neighbour)<br>
 
-# Driver Code<br>
+#Driver Code<br>
 print("Following is the Depth-First Search")<br>
 dfs(visited, graph, '5')<br>
 
